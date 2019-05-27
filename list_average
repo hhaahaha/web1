@@ -1,0 +1,16 @@
+#시험 점수 3인자를 리스트로 받아 평균을 구하는 프로그램을 코딩하라.
+
+scores=[] #인물마다 점수 리스트를 개별적으로 생성하는 코딩법은 없을까?
+score=0
+sum=0
+
+
+
+for a in range(3):
+  score= int(input("점수를 입력하라: "))
+  scores.append(score)
+  score=scores[a]
+  sum += score
+  
+average=sum/len(scores)
+print("평균은{}이다.".format(average))
