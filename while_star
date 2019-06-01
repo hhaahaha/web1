@@ -1,0 +1,21 @@
+## while 문을 활용하여 *을 표시하라.(4줄)
+
+#오답 1
+star=0
+
+while star<5 :
+    for i in range(6): #for문 반복(*을 i 숫자만큼 찍는다) 1회 끝나면    ###while 반복문이 다시 돌면 i 는 0에서 시작한다.
+        print(i*"*")
+    star +=1          #star 가 1개 더해진다. star는 2이므로, while 문이 다시 반복된다.
+    
+>>결과                 #### "*"가 0,1,2,3,4,5개씩 찍히는 for문이 4번 반복된다.
+
+
+#오답2
+star=0
+
+while star<5 :
+    for i in range(6): 
+        print(i*"*")   #"*"을 i번 찍는다. ## 이를 6번 반복한다. 
+    star +=1           ###star 를 1 증가한다. #### star는 1이므로 while 문을 다시 반복한다.
+   
