@@ -1,0 +1,34 @@
+
+class Animal() :
+    '''동물'''
+    def __init__ (self,name):
+        self.name=name
+
+    def eat (self):      
+        print("냠냠")
+
+class Human(Animal):
+    '''인간'''
+    def __init__(self,name,food):
+        super().__init__(name)
+        self.food=food
+
+    def eats (self):
+        self.name()
+        print("{}를".format(self.food))
+        self.eat()
+
+
+class Dog(Animal):
+    '''개'''
+    def __init__(self,name,food):
+        super().__init__(name)
+        self.food=food
+
+    def eats (self):
+        print(self.name,"은")
+        print("{}를 {}".format(self.food,self.eat))
+        
+
+ming=Dog("밍밍","사료")
+ming.eats()
